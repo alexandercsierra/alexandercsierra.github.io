@@ -2234,6 +2234,7 @@ input, select, textarea {
 		position: relative;
 	}
 
+
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
@@ -2243,8 +2244,11 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
+		}
+
+		.icon2:before {
+			font-family: 'Font Awesome 5 Free';
 		}
 
 		.icon > .label {
