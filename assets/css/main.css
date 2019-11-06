@@ -76,6 +76,7 @@ input, select, textarea {
 	display: none;
 }
 
+
 /* Basic */
 
 	@-ms-viewport {
@@ -2004,7 +2005,9 @@ input, select, textarea {
 		display: block;
 		font-size: 0.9em;
 		font-weight: 400;
-		margin: 0 0 1em 0;
+		/* margin: 0 0 1em 0; */
+		margin-top: 2rem;
+		margin-bottom: .3rem;
 	}
 
 	input[type="text"],
@@ -3796,3 +3799,20 @@ input, select, textarea {
 			}
 
 		}
+
+
+button {
+	margin-top: 2rem;
+}
+
+.contactMe {
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+}
+
+dl.alt {
+	margin-top: 2.2rem;
+}
