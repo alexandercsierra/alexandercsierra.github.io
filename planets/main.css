@@ -47,7 +47,8 @@ body {
 }
 
 h1 {
-    width: 50%;
+    /* width: 50%; */
+    width: 100%;
     padding: 4%;
     
 }
@@ -100,5 +101,15 @@ button {
     background-position: cover;
     background-size: 1920px 1080px;
     background-attachment: fixed;
+}
+
+
+@media (max-width: 532px) {
+    form{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20%;
+    }
 }
 
