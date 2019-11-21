@@ -79,8 +79,9 @@ function findAMatch(str, arr) {
     cityName = city.match(/[b-df-hj-np-tv-z]/gi);
 
     if (cityName !== null && cityName.length === state.length) {
-      if (checkIfDuplicateExists(cityName) === false) {
+      if (checkIfDuplicateExists(cityName) === false && checkIfDuplicateExists(state) === false) {
         let dupCity = checkIfSame(cityName, state, city);
+        console.log(dupCity);
         //prevents duplicates from being added to the final array
         if (cities.includes(dupCity) === false && dupCity !== undefined) {
           cities.push(dupCity);
@@ -96,6 +97,18 @@ function findAMatch(str, arr) {
             cities.pop();
             return "No Match";
           }
+        }
+      } else if (checkIfDuplicateExists(cityName) === true && checkIfDuplicateExists(state) === true){
+        //checks for duplicates, but doesn't check acurately for the SAME duplicates
+        if (checkIfSame(cityName, state, city) !== undefined){
+          //will log to console the names of cities which have the same number of consonants, which also contain duplicates, but don't know how to check quality.
+          console.log(city);
+          //alphabet array
+          //nested for loops
+          //starting at first item, check if in second array and how many times.
+          
+        } else {
+          console.log ("nope");
         }
       }
     }
