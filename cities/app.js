@@ -1,18 +1,18 @@
 //code to extract cities from wikipedia.org
 
-// var city = Array.prototype.slice.call(document.querySelectorAll("td > a"));
-// var names = [];
-// function findCities(arr) {
-//   for (let i = 0; i < arr.length; i++) {
-//     if (typeof arr[i].innerHTML === "string");
-//     {
-//       names.push(arr[i].innerHTML);
-//     }
-//   }
-//   return names;
-// }
-// findCities(city);
-// console.log(JSON.stringify(names));
+var city = Array.prototype.slice.call(document.querySelectorAll("td > a"));
+var names = [];
+function findCities(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i].innerHTML === "string");
+    {
+      names.push(arr[i].innerHTML);
+    }
+  }
+  return names;
+}
+findCities(city);
+console.log(JSON.stringify(names));
 
 var body = document.querySelector("body");
 var input = document.querySelector("input");
