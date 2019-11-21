@@ -235,7 +235,7 @@ h4 {
 .websites .row {
   display: flex;
   justify-content: space-between;
-  margin: 0 4%;
+  margin: 6%;
 }
 .row .cardContainer {
   width: 30%;
@@ -256,6 +256,9 @@ h4 {
 .card div p {
   padding: 4% 10%;
   background: white;
+}
+p span.trans {
+  color: transparent;
 }
 .end {
   height: 10px;
@@ -289,6 +292,17 @@ footer {
     font-size: 0.9rem;
   }
 }
+@media (max-width: 935px) {
+  .about .imgDiv img {
+    width: 60%;
+  }
+  .row {
+    margin: 0;
+  }
+  .row .cardContainer {
+    width: 60%;
+  }
+}
 @media (max-width: 850px) {
   header {
     background-size: 150%;
@@ -318,7 +332,6 @@ footer {
     align-items: center;
   }
   .row .cardContainer {
-    width: 90%;
     margin-bottom: 15%;
   }
   footer {
