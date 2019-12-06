@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta property="og:image" content="/planets/images/earth1.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <title>Planetary Weights</title>
 </head>
@@ -13,7 +14,7 @@
         <h1>Planetary Weights</h1>
         <form>
             <input type="text" placeholder="Enter your Earth weight">
-            <select name="planets">
+            <select name="planets" class="planets">
                 <option value="Mercury">Mercury</option>
                 <option value="Venus">Venus</option>
                 <option value="Earth">Earth</option>
@@ -23,6 +24,10 @@
                 <option value="Uranus">Uranus</option>
                 <option value="Neptune">Neptune</option>
                 <option value="Pluto">Pluto</option>
+            </select>
+            <select name="weight" class="units">
+                <option value="lbs">lbs</option>
+                <option value="kgs">kgs</option>
             </select>
             <button type="submit">SUBMIT</button>
         </form>

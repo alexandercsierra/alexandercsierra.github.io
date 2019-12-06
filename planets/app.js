@@ -2,8 +2,9 @@ var weightInput = document.querySelector("input");
 var weightSubmit = document.querySelector("button");
 var h2 = document.querySelector("h2");
 var result = document.querySelector(".result");
-var planet = document.querySelector("select");
+var planet = document.querySelector(".planets");
 var body = document.querySelector("body");
+var units = document.querySelector(".units");
 var weight = 0;
 
 weightSubmit.addEventListener("click", function (e){
@@ -12,7 +13,12 @@ weightSubmit.addEventListener("click", function (e){
     console.log(planetChoice);
     var weight = weightInput.value;
     var newWeight = spaceWeights("Earth", weight, planetChoice);
-    h2.textContent = "You would weigh " + newWeight + " pounds on " + planetChoice;
+    if (units.value = "lbs"){
+        h2.textContent = "You would weigh " + newWeight + " pounds on " + planetChoice;
+    } else {
+        h2.textContent = "You would weigh " + newWeight + " kilos on " + planetChoice;
+    }
+    
     
     //change background according to planet choice
 

@@ -129,6 +129,7 @@ table {
 * {
   box-sizing: border-box;
   max-width: 100%;
+  /* border: 1px solid red !important; */
 }
 body {
   font-family: 'Muli', sans-serif;
@@ -155,6 +156,7 @@ nav {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: fixed;
 }
 nav a {
   text-decoration: none;
@@ -200,7 +202,7 @@ h4 {
   margin: 0 auto;
   background: white;
 }
-.about {
+.about{
   display: flex;
   justify-content: space-around;
   padding: 10% 0;
@@ -225,14 +227,52 @@ h4 {
   line-height: 1.5;
   text-align: left;
 }
-.websites {
+i {
+  font-size: 8rem;
+}
+.aboutText i {
+  font-size: 4rem;
+}
+.fa-html5 {
+  color: #df4b25;
+}
+.fa-css3-alt{
+  color: #1e5fa9;
+}
+.fa-js{
+  color: #e9d54d;
+}
+.fa-cube{
+  color: #39ad60;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+.contact div {
+  margin: 4%;
+  /* text-align: center; */
+}
+
+.contact div a {
+  color: none;
+}
+
+.contactTitle {
+  text-align: center;
+  
+}
+
+.websites, .skills {
   margin: 10% 0;
 }
-.websites h3 {
+.websites h3, .skills h3 {
   text-align: center;
   margin-bottom: 5%;
 }
-.websites .row {
+.websites .row, .skills .row {
   display: flex;
   justify-content: space-between;
   margin: 6%;
@@ -249,6 +289,20 @@ h4 {
 .row .card {
   background: #011324;
   background: linear-gradient(288deg, #011324 0%, #00b5ff 100%);
+}
+
+.skillIcon{
+  display: flex;
+  justify-content:center;
+  background: none;
+  margin-top: 10%;
+}
+
+.skills .row .cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 .row .card img {
   width: 100%;
